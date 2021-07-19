@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanamywife</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <section class="sections sec1 parallax">
+        <div class="box">
+            <h2>Untuk Pembukaan<small>Silahkan Dibuka lah Bidadariku</small></h2>
+            <center><a href="surprise.html">Love you :)</a></center>
+        </div>
+    </section>
+    <section class="sections sec2">
+        <div class="box">
+            <h2>Doaku Untukmu<small>Kekasih Serta Calon Istriku Masa Depan</small></h2>
+            <center><a href="katadariku.html">pesandariku</a></center>
+        </div>
+    </section>
+    <section class="sections sec3">
+        <div class="box">
+            <h2>Ada Bidadari Uyyy<small>Coba Lihat Cantik Kaliii :)</small></h2>
+            <center><a href="foto.html">Coba Lihat</a></center>
+        </div>
+    </section>
+    <section class="sections sec4 parallax">
+        <div class="box">
+            <h2>Ehh... Aingg Ada Kasih Sesuatu Buat kamu<small>Intinya digeser atau ditekan ya sayang :)</small></h2>
+            <center><a href="game.html">Hmm.. Nah Lihatlah :)</a></center>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const buttons = document.querySelectorAll('a');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+
+                let ripples = document.createElement('span');
+                ripples.style.left = x + 'px';
+                ripples.style.top = y + 'px';
+                this.appendChild(ripples);
+
+                setTimeout(() => {
+                    ripples.remove()
+                }, 1000);
+            })
+        })
+    </script>
+    <script src="script3.js"></script>
+</body>
+<figure>
+    <meta charset="UTF-8">
+    <audio hidden autoplay loop>
+        <source src="tutu.mp3" type="audio/mpeg">
+        <source src="tutu.ogg" type="audio/ogg">
+        <source src="tutu.wav" type="audio/wav">
+        Browsermu tidak mendukung tag audio
+      </audio>
+</figure>
+
+</html>

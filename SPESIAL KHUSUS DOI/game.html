@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Append On Mousemove | Javascript</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e) {
+            var body = document.querySelector('body');
+            var heart = document.createElement("span");
+            var x = e.offsetX;
+            var y = e.offsetY;
+            heart.style.left = x + 'px';
+            heart.style.top = y + 'px';
+            var size = Math.random() * 100;
+            heart.style.width = 20 + size + 'px';
+            heart.style.height = 20 + size + 'px';
+            body.appendChild(heart);
+
+            setTimeout(function() {
+                heart.remove();
+            }, 2000)
+        })
+    </script>
+</body>
+<figure>
+    <meta charset="UTF-8">
+    <audio hidden autoplay loop>
+        <source src="dandelios.mp3" type="audio/mpeg">
+        <source src="dandelios.ogg" type="audio/ogg">
+        <source src="dandelios.wav" type="audio/wav">
+        Browsermu tidak mendukung tag audio
+      </audio>
+</figure>
+
+</html>

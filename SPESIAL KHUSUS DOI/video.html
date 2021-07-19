@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>NANA MY WIFE</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+    <div class="banner">
+        <video autoplay="" loop="">
+            <source src="simanis.mp4" type="video/mp4"> 
+        </video>
+
+        <div id="bg"></div>
+    </div>
+    <script type="text/javascript">
+        let bg = document.querySelector('#bg');
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            bg.style.backgroundSize = 100 + value * 2 + "px";
+        })
+    </script>
+</body>
+
+</html>
